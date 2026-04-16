@@ -46,8 +46,7 @@ public class UsuarioService {
                 usuarioRecuperado.setNome(usuario.getNome());
             }
             if(usuario.getDataNascimento()!= null){
-                usuarioRecuperado.setDataNascimento
-                (usuario.getDataNascimento());
+                usuarioRecuperado.setDataNascimento(usuario.getDataNascimento());
             }
             return usuarioRepository.save(usuarioRecuperado);
         }
